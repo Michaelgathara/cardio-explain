@@ -92,6 +92,10 @@ ol li{
     text-decoration: none;
 }
 
+footer {
+    text-align: center;
+}
+
 /* search page specific */
 .search-box {
     width: 40%;

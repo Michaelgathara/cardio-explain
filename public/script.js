@@ -3,6 +3,8 @@ window.onload = function() {
     for (var i = 0; i < wrongElements.length; i++) {
         wrongElements[i].addEventListener('click', function() {
             this.style.backgroundColor = 'lightcoral';
+            var explain = document.getElementById('explain');
+            explain.style.display = "block";
         });
     }
 
