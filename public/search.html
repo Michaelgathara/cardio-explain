@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <title>ECG Teach & Test Search</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">New Case</a></li>
+                    <li><a href="search.html" class="selected">Search</a></li>
+                    <li><a href="index.html">Random Quiz</a></li>
+                    <li><a href="index.html">Criteria</a></li>
+                    <li><a href="index.html">Approach to Interp</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Add search bar style thing here -->
+        <h1 class="center" id="main-text">Search for ECGs</h1>
+        <form class="center">
+            <input type="text" class="search-box" placeholder="Search ..."/>
+        </form>
+        <script>
+            function cycleWords() {
+                const words = ['Practice Tests', 'Study Guides', 'Cases', 'ECGs'];
+                const heading = document.getElementById('main-text');
+                let currentWordIndex = 0;
+
+                setInterval(() => {
+                    currentWordIndex = (currentWordIndex + 1) % words.length;
+                    heading.innerHTML = `Search for ${words[currentWordIndex]}`;
+                }, 2000);
+            }
+
+            window.onload = cycleWords;
+        </script>
+    </body>
+</html>
