@@ -5,6 +5,9 @@ window.onload = function() {
             this.style.backgroundColor = 'lightcoral';
             var explain = document.getElementById('explain');
             explain.style.display = "block";
+
+            // var beat = document.getElementById('heartbeat');
+            // beat.style.animationDuration = "5s";
         });
     }
 

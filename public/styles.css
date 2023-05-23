@@ -12,18 +12,22 @@ body {
     text-align: center;
 }
 
-#confetti-canvas {
-    height: 100vh;
-    width: 100vh;
-    z-index: 2;
-    position: absolute;
-    pointer-events: none;
-    display: block;
+.app-name {
+    margin: 0 auto;
+    text-align: center;
+    font-size: xx-large;
 }
+
 
 header {
     background-color: #f8f8f8;
     padding: 20px 0;
+}
+
+.front-page header {
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
 }
 
 nav ul {
@@ -43,6 +47,28 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #007BFF;
+}
+
+.front-page {
+    background-color: #371B1B;
+}
+
+.front-page .wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.patient-note {
+    max-width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    min-height: 70vh;
+    background-color: #F6F4F3;
+    padding: .4%;
+    line-height: 200%;
+    word-spacing: 50%;
+    border-radius: 12px;
 }
 
 .selected {
@@ -90,6 +116,10 @@ ol li{
     border-radius: 10px;
     border: 1px solid transparent;
     text-decoration: none;
+}
+
+.front-page .explain-button {
+    padding: 1.5%;
 }
 
 footer {
