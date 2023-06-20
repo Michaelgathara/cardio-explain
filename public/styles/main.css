@@ -1,0 +1,27 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-title {
+    color: darkred;
+    font-size: xx-large;
+}
+
+.main-paragraph {
+
+}
