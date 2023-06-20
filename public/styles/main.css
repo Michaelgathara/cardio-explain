@@ -7,10 +7,25 @@ body {
     margin: 0;
 }
 
-header {
+.white-color {
+    color: white;
     background-color: black;
-    text-align: center;
     padding: 1em;
+
+}
+.white-color a {
+    color: white;
+    text-decoration: none;
+}
+
+.space {
+    margin-right: 10%;
+    overflow-wrap: break-word;
+}
+
+header {
+    text-align: center;
+    
 }
 
 .center {
@@ -23,5 +38,32 @@ header {
 }
 
 .main-paragraph {
+    font-size: x-large;
+    color: purple;
+}
 
+.app-title {
+    font-size: calc(50px + 2vmin);
+    margin-top: 7%;
+}
+
+.app-desc {
+    font-size: calc(20px + 2vmin);
+    margin-top: 5%;
+    color: darkred;
+}
+
+.get-started-button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
