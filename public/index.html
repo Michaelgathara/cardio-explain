@@ -1,39 +1,33 @@
 <!DOCTYPE html>
+<html>
     <head>
-        <title>ECG Teach & Test</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="styles/main.css"/>
     </head>
-    <body class="front-page">
-        <header>
-            <nav>
-                <h3 class="app-name">ECG Teach & Test</h3>
-            </nav>
-        </header>
-        <div class="wrapper">
-            <div class="patient-note">
-                <p class="date" id="date-text"><strong>Date:</strong> </p>
-                <p class="time" id="time-text"><strong>Time:</strong> </p>
-                <p class="name"><strong>Patient name:</strong> Namey McNamey</p>
-                <p class="on-duty"><strong>Nurse on duty:</strong> You</p>
-                <p class="brief">
-                    Namey McNamey is a 21-year-old human suffering from misdiagnosis. You have been tasked with identifying Namey McNamey's ECG's in order to aid the doctor in delivering the appropriate diagnosis.  
-                    <br>
-                    <br>
-                    We have Namey McNamey attached to a Holter Monitor while they wait. Everytime you misdiagnose a chart, their heart rate increases and they may go into cardiac arrest; so it's imperative you diagnose every chart correctly. If you misdiagnose 5 charts in a row, our patient flatlines!!!!.
-                    <br>
-                    <br>
-                    Good luck!
-                </p>
-                <a class="explain-button" href="start.html">Begin</a>
-            </div>
-        </div>
-        <script>
-            var date = new Date();
-            var dateLabel = document.getElementById('date-text');
-            dateLabel.innerHTML = `<strong>Date:</strong> ${date.toLocaleDateString()}`;
+    <body>
 
-            var timeLabel = document.getElementById('time-text');
-            timeLabel.innerHTML = `<strong>Time:</strong> ${date.toLocaleTimeString()}`;
-        </script>
+        <header>
+            <a href="downloads.html">Downloads</a>
+            <a href="arrhythmia.html">Arrhythmia Case</a>
+            <a href="search.html">Search</a>
+            <a href="criteria.html">Criteria</a>
+            <a href="basics.html">Basics</a>
+            <a href="treatment.html">Treatment</a>
+        </header>
+
+        <h2 class="main-title">The Ultimate Online Tool for Learning ECG Interpretation</h2>
+        <p class="main-paragraph">Personalized Education On-Demand</p>
+
+        <div class="main-container">
+            <h1 class="app-title">ECG Teach & Test</h1>
+            <p class="app-desc">Save the Patient! <br> Pass the Boards!</p>
+
+            <a href="second.html" target="_self" class="get-started-button">Get Started!</a>
+        </div>
+
+        <footer>
+
+        </footer>
+
+        <script src="scripts/script.js"></script>
     </body>
 </html>
