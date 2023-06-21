@@ -98,7 +98,7 @@ footer {
 
 /* downloads page */
 
-.downloads-page .main-container {
+.main-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -121,4 +121,23 @@ footer {
     text-align: center;
     margin-top: 55%;
     /* margin-bottom: 5%; */
+}
+
+/* Review page */
+.review-cell {
+    /* border: transparent; */
+    border: 3px solid darkred;
+    padding: 2%;
+    height: 100%;
+    width: 50%;
+    margin-top: 0;
+}
+
+.review-cell .main-title {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+.review-cell p {
+    font-size: 1.3em;
 }
