@@ -23,6 +23,12 @@ body {
     overflow-wrap: break-word;
 }
 
+.selected {
+    background-color: darkred;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 header {
     text-align: center;
     
@@ -66,4 +72,53 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+.second-container {
+    text-align: center;
+}
+
+.second-main {
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: left;
+}
+
+.second-main li {
+    font-size: x-large;
+    margin-bottom: 1em;
+}
+
+.second-main a {
+    text-decoration: none;
+    color: darkred;
+}
+
+
+/* downloads page */
+
+.downloads-page .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.downloads-page .download-cell {
+    border: 3px solid darkred;
+    padding: 2%;
+    height: 250px;
+    width: 150px;
+    margin-left: 5%;
+    border-radius: 10px;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.downloads-page .download-title {
+    text-align: center;
+    margin-top: 55%;
+    /* margin-bottom: 5%; */
 }
