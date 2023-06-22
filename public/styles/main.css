@@ -106,6 +106,11 @@ footer {
     margin-top: 8%;
 }
 
+.main-page .main-container {
+    flex-direction: column;
+    margin-top: 0%;
+}
+
 .downloads-page .download-cell {
     border: 3px solid darkred;
     padding: 2%;
