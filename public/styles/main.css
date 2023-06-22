@@ -7,6 +7,13 @@ body {
     margin: 0;
 }
 
+.placeholder {
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+    
+}
+
 .white-color {
     color: white;
     background-color: black;
@@ -69,7 +76,7 @@ header {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -103,7 +110,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 2%;
 }
 
 .main-page .main-container {
@@ -131,7 +138,7 @@ footer {
 /* Review page */
 .review-cell {
     /* border: transparent; */
-    border: 3px solid darkred;
+    /* border: 3px solid darkred; */
     padding: 2%;
     height: 100%;
     width: 50%;
@@ -145,4 +152,24 @@ footer {
 
 .review-cell p {
     font-size: 1.3em;
+}
+
+.review-cell-center {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.purple {
+    color: purple;
+    font-weight: bold;
+}
+
+.red {
+    color: darkred;
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
