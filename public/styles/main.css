@@ -282,3 +282,25 @@ footer {
 .basics-page .download-cell a {
     color: black;
 }
+
+/* Treatment Page */
+.treatment-page .review-cell li{
+    font-size: x-large;
+    margin-bottom: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.treatment-page .review-cell a {
+    text-decoration: none;
+    color: black;
+}
+
+.treatment-image {
+    width: 90%;
+    height: 90%;
+}
+
+.black {
+    color: black;
+}
