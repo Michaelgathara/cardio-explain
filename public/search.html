@@ -12,7 +12,12 @@
             <a class="space" href="basics.html">Basics</a>
             <a class="space" href="treatment.html">Treatment</a>
         </header>
-
+        <h1 class="center" id="main-text">Search for ECGs</h1>
+        <form class="center">
+            <input type="text" class="search-box" placeholder="Search ..."/>
+        </form>
+        <h1 class="center" id="main-text">Or Choose a Topic</h1>
+        
         <div class="main-container">
             <div class="review-cell">
                 <div class="review-blue">
@@ -21,15 +26,65 @@
                 <ul>
                     <li><a href="">Artifact</a></li>
                     <li><a href="">Asystole</a></li>
-                    <li><a href="atrial.html">Atrial Fibrillation</a></li>
+                    <li><a href="atrial.html" class="click">Atrial Fibrillation</a></li>
                     <li><a href="">Atrial Flutter</a></li>
                     <li><a href="">Atrial Tachycardia</a></li>
                     <li><a href="">Complete Heart Block</a></li>
                     <li><a href="">Electromechanical dissociation (EMD)</a></li>
                     <li><a href="">Multifocal Atrial Tachycardia</a></li>
-                    <li><a href="">Asystole</a></li>
+                    <li><a href="">Premature atrial contraction (PAC)</a></li>
                 </ul>
             </div>
+            <div class="review-cell">
+                <div class="review-blue">
+                    Conduction Disturbances
+                </div>
+                <ul>
+                    <li><a href="">AV block, first-degree</a></li>
+                    <li><a href="">AV block, second-degree (type one, Wenkebach)</a></li>
+                    <li><a href="">AV block, first-degree
+                    (complete heart block)</a></li>
+                    <li><a href="">Left bundle branch block</a></li>
+                    <li><a href="">Right bundle branch block</a></li>
+                    <li><a href="">Sick sinus syndrome</a></li>
+                    <li><a href="">Atrial flutter</a></li>
+                    <li><a href="">Atrial fibrillation</a></li>
+                    <li><a href="">Premature ventricular contractions</a></li>
+                    <!-- <li><a href="">Wolff-Parkinson-White syndrome</a></li> -->
+                </ul>
+            </div>
+            <div class="review-cell">
+                <div class="review-blue">
+                    Procedures
+                </div>
+                <ul>
+                    <li><a href="">ECG lead placement/troubleshooting</a></li>
+                    <li><a href="">Cardioversion/defibrillation</a></li>
+                    <li><a href="">Pacemakers</a></li>
+                    <li><a href="">Echocardiography</a></li>
+                    <li><a href="">Stress test</a></li>
+                    <li><a href="">Catheter ablation</a></li>
+                    <li><a href="">Intracardiac electrophysiology study (EPS)</a></li>
+                    <li><a href="">Coronary angiography</a></li>
+                    <li><a href="">ICD insertion</a></li>
+                </ul>
+            </div>
+            <div class="review-cell">
+                <div class="review-blue">
+                    Basic ECG
+                </div>
+                <ul>
+                    <li><a href="">Approach to interpretation</a></li>
+                    <li><a href="">P-QRS-T measurements</a></li>
+                    <li><a href="">Heart rate</a></li>
+                    <li><a href="">Normal sinus rhythm</a></li>
+                    <li><a href="">Understanding ECG waveforms</a></li>
+                    <li><a href="">Identifying arrhythmias</a></li>
+                    <li><a href="">Cardiac axis</a></li>
+                    <li><a href="">Bundle branch blocks</a></li>
+                    <li><a href="">ST Segment and T wave abnormalities</a></li>
+                </ul>
+            </div>            
         </div>
 
         <footer class="center white-color">
@@ -41,5 +96,19 @@
             <a class="space" href="test.html">Test Yourself</a>
         </footer>
         <script src="scripts/script.js"></script>
+        <script>
+            function cycleWords() {
+                const words = ['Practice Tests', 'Study Guides', 'Cases', 'ECGs'];
+                const heading = document.getElementById('main-text');
+                let currentWordIndex = 0;
+
+                setInterval(() => {
+                    currentWordIndex = (currentWordIndex + 1) % words.length;
+                    heading.innerHTML = `Search for ${words[currentWordIndex]}`;
+                }, 2000);
+            }
+
+            window.onload = cycleWords;
+        </script>
     </body>
 </html>
