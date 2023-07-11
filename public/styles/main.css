@@ -235,9 +235,6 @@ footer {
 }
 
 /* Atrial Second */
-.middle {
-    text-align: center;
-}
 
 .atrial-second-page img {
     width: 90%;
@@ -303,4 +300,69 @@ footer {
 
 .black {
     color: black;
+}
+
+/* Misc */
+.offset-text {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.help-text {
+    font-size: 1.3em;
+}
+
+.help-page footer {
+    position: relative;
+}
+
+.course-page .get-started-button {
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.course-page .main-container {
+    margin-left: 10%;
+    justify-content: space-around !important;
+}
+
+.course-page .review-cell {
+    text-align: center;
+}
+
+.image-link {
+    width: 90%;
+    width: 70%;
+}
+
+.video {
+    width: 90%;
+    height: 90%;
+    top: 0 !important;
+    margin-bottom: 40%;
+}
+
+.course-second-page footer {
+   position: relative;
+}
+
+.basics-second-page img {
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+.basics-second-page footer {
+    position: relative;
+}
+
+.middle {
+    text-align: center;
+    margin-left: 5%;
+}
+
+.criteria-page .main-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* justify-content: space-around !important; */
 }

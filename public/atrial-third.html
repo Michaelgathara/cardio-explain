@@ -16,18 +16,20 @@
             <a class="space" href="advanced.html">Advanced Concepts</a>
         </header>
 
-        <h1 class="center red">ECG Criteria : Atrial Fibrillation</h1>
-        <div class="middle">
-            <img src="images/atrial-second.png" alt="Atrial Fibrillation" class="center"/>
-        </div>
-        <div class="main-container">
-            <div class="review-cell review-right">
-                <a href="" class="back-button">Back</a>
-            </div>
-            <div class="review-cell">
-                <a href="" class="next-button">Quiz Me</a>
-            </div>
-        </div>
+        <h1 class="center red">ECG Criteria : Atrial Fibrillation : QUIZ</h1>
+        <br>
+        <br>
+        <p class="help-text offset-text"><strong>Instructions: </strong> For each statement, select the choice that best characterizes Atrial Fibrillation</p>
+        <ol class="help-text offset-text">
+            <br><br>
+            <li>Ventricular rhythm is (<a href="" class="red">regular</a> | <a href="" class="red" id="right">irregular</a>)</li>
+            <br><br>
+            <li>Ventricular rhythm manifests as (<a href="" class="red">P waves</a> | <a href="" class="red" id="right">QRS complexes</a>) at (<a href="" class="red">constant</a> | <a href="" class="red" id="right">varrying</a>)</li>
+            <br><br>
+            <li>For each P wave (atrial contraction) there is an associated QRS complex (ventricular contraction): (<a href="" class="red">true</a> | <a href="" class="red" id="right">false</a>)</li>
+            <br><br>
+            <li>The ventricular rate is (<a href="" class="red">usually</a> | <a href="" class="red" id="right">always</a>) > 100 BPM</li>
+        </ol>
 
         <footer class="center white-color">
             <a class="space" href="telemetry.html">Telemetry Simulator</a>
@@ -39,6 +41,13 @@
             <a class="space" href="vault.html">My digital vault</a>
             <a class="space" href="downloads.html">Downloads</a>
         </footer>
-        <script src="scripts/script.js"></script>
+        <script>
+            var right = document.getElementById('right');
+            function changeColorRight() {
+                right.style.color = "green";
+                return false;
+            }
+            right.onclick = changeColorRight;
+        </script>
     </body>
 </html>
