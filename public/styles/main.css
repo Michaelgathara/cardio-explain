@@ -366,3 +366,51 @@ footer {
     margin-right: 10%;
     /* justify-content: space-around !important; */
 }
+
+.atrial-image {
+    max-width: 40%;
+    max-height: 10%;
+    right: 50%;
+}
+
+.arth {
+    text-align: right;
+}
+
+.arthh {
+    margin-left: 10%;
+}
+
+.arthhh {
+    margin-left: 20%;
+    color: white !important;
+}
+
+.left {
+    text-align: left;
+}
+
+.options {
+    margin-left: 30%;
+}
+
+.compare-page a {
+    text-decoration: none;
+    /* color: black; */
+}   
+
+.compare-page .review-cell a{
+    color: black;
+}
+
+.compare-image {
+    width: 80%;
+    height: 80%;
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+    footer {
+        color: blue;
+    }
+}
