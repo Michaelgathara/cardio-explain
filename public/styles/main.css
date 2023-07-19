@@ -118,6 +118,9 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+}
+
+.test-page .main-container {
     flex-wrap: wrap;
 }
 
