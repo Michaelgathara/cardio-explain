@@ -118,6 +118,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+    flex-wrap: wrap;
 }
 
 .main-page .main-container {
@@ -367,6 +368,10 @@ footer {
     margin-left: 5%;
 }
 
+.middle-image {
+    margin-left: 21%;
+}
+
 .criteria-page .main-container {
     margin-left: 10%;
     margin-right: 10%;
@@ -412,6 +417,33 @@ footer {
 .compare-image {
     width: 80%;
     height: 80%;
+}
+
+.white {
+    color: white !important;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.pop-page footer {
+    position: relative;
+}
+
+.fool {
+    width: 60%;
+
+}
+
+.save {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 /* Mobile CSS */
