@@ -30,6 +30,7 @@ body {
 .space {
     margin-right: 5%;
     overflow-wrap: break-word;
+    /* overflow-wrap: unset; */
 }
 
 .selected {
@@ -450,8 +451,36 @@ footer {
 }
 
 /* Mobile CSS */
-@media only screen and (max-width: 600px) {
-    footer {
-        color: blue;
+
+.wrap {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5%;
+    border-radius: 12px;
+}
+
+.wrap a {
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.3em;
+}
+
+.video-cell {
+    margin-left: 10%;
+}
+
+.video-link {
+    margin-top: 10%;
+    /* padding: 10%; */
+}
+
+@media only screen and (max-width: 1740px) {
+    header footer {
+        position: relative;
+        padding: 100%;
     }
+
+    /* .space {
+        margin-top: 10%;
+    } */
 }

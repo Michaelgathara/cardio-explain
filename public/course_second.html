@@ -21,35 +21,23 @@
         </h1>
         
         <div class="main-container">
-            <div class="review-cell">
+            <div class="review-cell video-cell">
                 <p class="help-text"><span class="red">Choose a video topic to watch</span></p>
                 <br>
-                <!-- <a href="" class="get-started-button">ECG Interpretation</a>
-                <br><br><br>
-                Something about what ECG interp is
-                <br><br><br>
-                <a href="" class="get-started-button">Atrial Rhythms</a>
-                <br><br><br><br>
-                <a href="" class="get-started-button">Normal Sinus Rhythm</a>
-                <br><br><br><br>
-                <a href="" class="get-started-button">Ventricular Rhythms</a> -->
-                <a href=""><img class="image-link" src="images/sinus-tach.png"/></a>
-                <br>
-                <hr>
-                <a href=""><img class="image-link" src="images/sinus-bach.png"/></a>
-                <br>
-                <hr>
-                <a href=""><img class="image-link" src="images/sinus-nsr.png"/></a>
-                <br>
-                <hr>
-                <a href=""><img class="image-link" src="images/sinus-sa.png"/></a>
-            
+                <!-- PUT LINKS HERE -->
+                <div class="wrap"><a class="video-link" href="#" data-video="videos/nsr.mp4">Normal Sinus Rhythm (NSR)</a></div>
+                <br><br>
+                <div class="wrap"><a class="video-link" href="#" data-video="videos/tach.mp4">Sinus Tachycardia</a></div>
+                <br><br>
+                <div class="wrap"><a class="video-link" href="#" data-video="videos/brad.mp4">Sinus Bradycardia</a></div>
+                <br><br>
+                <div class="wrap"><a class="video-link" href="#" data-video="videos/sa.mp4">Sinus Arrhythmia (SA)</a></div>
+                <br><br><br><br><br>
             </div>
             <div class="review-cell">
-                <video style="border-radius: 10px;" class="video" width="700" height="500" controls>
-                    <source src="videos/hostiles.mp4" type="video/mp4">
+                <video style="border-radius: 10px;" id="myVideoSource" class="video" width="700" height="500" controls>
                   Your browser does not support videos, consider switching to another browser.
-                  </video>
+                </video>
             </div>
         </div>
 
@@ -64,5 +52,17 @@
             <a class="space" href="downloads.html">Downloads</a>
         </footer>
         <script src="scripts/script.js"></script>
+        <script>
+          const links = document.querySelectorAll(".video-link");
+          const video = document.querySelector("#myVideo");
+          const source = document.querySelector("#myVideoSource");
+
+          links.forEach(link => {
+            link.addEventListener("click", function(e) {
+              e.preventDefault();
+              source.src = this.dataset.video;
+            });
+          });
+        </script>
     </body>
 </html>
