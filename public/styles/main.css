@@ -30,6 +30,7 @@ body {
 .space {
     margin-right: 5%;
     overflow-wrap: break-word;
+    /* overflow-wrap: unset; */
 }
 
 .selected {
@@ -118,6 +119,10 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+}
+
+.test-page .main-container {
+    flex-wrap: wrap;
 }
 
 .main-page .main-container {
@@ -288,6 +293,12 @@ footer {
     text-decoration: none;
 }
 
+.telemetry-page .review-cell li {
+    font-size: medium;
+    margin-bottom: 0.5em;
+    margin-left: 9%;
+}
+
 .treatment-page .review-cell a {
     text-decoration: none;
     color: black;
@@ -361,8 +372,115 @@ footer {
     margin-left: 5%;
 }
 
+.middle-image {
+    margin-left: 21%;
+}
+
 .criteria-page .main-container {
     margin-left: 10%;
     margin-right: 10%;
     /* justify-content: space-around !important; */
+}
+
+.atrial-image {
+    max-width: 40%;
+    max-height: 10%;
+    right: 50%;
+}
+
+.arth {
+    text-align: right;
+}
+
+.arthh {
+    margin-left: 10%;
+}
+
+.arthhh {
+    margin-left: 20%;
+    color: white !important;
+}
+
+.left {
+    text-align: left;
+}
+
+.options {
+    margin-left: 30%;
+}
+
+.compare-page a {
+    text-decoration: none;
+    /* color: black; */
+}   
+
+.compare-page .review-cell a{
+    color: black;
+}
+
+.compare-image {
+    width: 80%;
+    height: 80%;
+}
+
+.white {
+    color: white !important;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.pop-page footer {
+    position: relative;
+}
+
+.fool {
+    width: 60%;
+
+}
+
+.save {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Mobile CSS */
+
+.wrap {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5%;
+    border-radius: 12px;
+}
+
+.wrap a {
+    text-decoration: none;
+    color: darkred;
+    font-size: 1.3em;
+}
+
+.video-cell {
+    margin-left: 10%;
+}
+
+.video-link {
+    margin-top: 10%;
+    /* padding: 10%; */
+}
+
+@media only screen and (max-width: 1740px) {
+    header footer {
+        position: relative;
+        padding: 100%;
+    }
+
+    /* .space {
+        margin-top: 10%;
+    } */
 }

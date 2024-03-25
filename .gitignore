@@ -67,3 +67,8 @@ node_modules/
 
 
 videos/
+archive/*
+public/archive/*
+public/images/*
+images/*
+videos/

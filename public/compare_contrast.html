@@ -1,63 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles/main.css"/>
-    </head>
-    <body class="compare-page">
-        <header class="center white-color">
-            <a class="space" href="assess.html">Assess my level</a>
-            <a class="space" href="course.html">Take the course</a>
-            <a class="space" href="basics.html">Basics</a>
-            <a class="space" href="criteria.html"> ECG Criteria</a>
-            <a class="space" href="arrhythmia.html">Arrhythmia Case</a>
-            <a class="space" href="search.html">Search</a>
-            <a class="space" href="compare_contrast.html">Compare & Contrast</a>
-            <a class="space" href="treatment.html">Treatment</a>
-            <a class="space" href="advanced.html">Advanced Concepts</a>
-        </header>
 
-        <h1 class="center red">Compare & Contrast</h1>
-        <div class="main-container">
-            <div class="review-cell">
-                <ul>
-                    <li><a href="">Artifact</a></li>
-                    <li><a href="">Asystole</a></li>
-                    <li><a href="treatment_second.html" class="click">Atrial Fibrillation</a></li>
-                    <li><a href="">Atrial Flutter</a></li>
-                    <li><a href="">Atrial Tachycardia</a></li>
-                    <li><a href="">Complete Heart Block</a></li>
-                    <li><a href="">Electromechanical dissociation (EMD)</a></li>
-                    <li><a href="">Multifocal Atrial Tachycardia</a></li>
-                    <li><a href="">Premature atrial contraction (PAC)</a></li>
-                </ul>
-            </div>
-            <div class="review-cell">
-                <ul>
-                    <li><a href="">AV block, first-degree</a></li>
-                    <li><a href="">AV block, second-degree (type one, Wenkebach)</a></li>
-                    <li><a href="">AV block, first-degree
-                    (complete heart block)</a></li>
-                    <li><a href="">Left bundle branch block</a></li>
-                    <li><a href="">Right bundle branch block</a></li>
-                    <li><a href="">Sick sinus syndrome</a></li>
-                    <li><a href="">Atrial flutter</a></li>
-                    <li><a href="">Atrial fibrillation</a></li>
-                    <li><a href="">Premature ventricular contractions</a></li>
-                    <!-- <li><a href="">Wolff-Parkinson-White syndrome</a></li> -->
-                </ul>
-            </div>
+<head>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body class="compare-page">
+    <header class="center white-color">
+        <a class="space" href="assess.html">Assess my level</a>
+        <a class="space" href="course.html">Take the course</a>
+        <a class="space" href="basics.html">Basics</a>
+        <a class="space" href="criteria.html"> ECG Criteria</a>
+        <a class="space" href="arrhythmia.html">Arrhythmia Case</a>
+        <a class="space" href="search.html">Search</a>
+        <a class="space selected" href="compare_contrast.html">Compare & Contrast</a>
+        <a class="space" href="treatment.html">Treatment</a>
+        <a class="space" href="advanced.html">Advanced Concepts</a>
+    </header>
+
+    <h1 class="center red">Compare & Contrast</h1>
+    <div class="main-container">
+        <div class="review-cell arthh">
+            <p class="help-text"><span class="red">Step 1: </span> Choose any two arrhythmias</p>
+            <ul>
+                <li><input type="checkbox" id="artifact"> <label for="artifact"><a href="">Artifact</a></label></li>
+                <li><input type="checkbox" id="asystole"> <label for="asystole"><a href="">Asystole</a></label></li>
+                <li><input type="checkbox" id="atrial-fibrillation"> <label for="atrial-fibrillation"><a
+                            href="treatment_second.html" class="click">Atrial Fibrillation</a></label></li>
+                <li><input type="checkbox" id="atrial-flutter"> <label for="atrial-flutter"><a href=""
+                            class="click">Atrial Flutter</a></label></li>
+                <li><input type="checkbox" id="atrial-tachycardia"> <label for="atrial-tachycardia"><a href="">Atrial
+                            Tachycardia</a></label></li>
+                <li><input type="checkbox" id="complete-heart-block"> <label for="complete-heart-block"><a
+                            href="">Complete Heart Block</a></label></li>
+                <li><input type="checkbox" id="emc"> <label for="emc"><a href="">Electromechanical dissociation
+                            (EMD)</a></label></li>
+                <li><input type="checkbox" id="mat"> <label for="mat"><a href="">Multifocal Atrial
+                            Tachycardia</a></label></li>
+                <li><input type="checkbox" id="pac"> <label for="pac"><a href="">Premature atrial contraction
+                            (PAC)</a></label></li>
+                <li><input type="checkbox" id="av-block-first-degree"> <label for="av-block-first-degree"><a href="">AV
+                            block, first-degree</a></label></li>
+                <li><input type="checkbox" id="av-block-second-degree"> <label for="av-block-second-degree"><a
+                            href="">AV block, second-degree (type one, Wenkebach)</a></label></li>
+                <li><input type="checkbox" id="av-block-complete"> <label for="av-block-complete"><a href="">AV block,
+                            first-degree (complete heart block)</a></label></li>
+                <li><input type="checkbox" id="left-bundle-branch-block"> <label for="left-bundle-branch-block"><a
+                            href="">Left bundle branch block</a></label></li>
+                <li><input type="checkbox" id="right-bundle-branch-block"> <label for="right-bundle-branch-block"><a
+                            href="">Right bundle branch block</a></label></li>
+                <li><input type="checkbox" id="sick-sinus-syndrome"> <label for="sick-sinus-syndrome"><a href="">Sick
+                            sinus syndrome</a></label></li>
+                <li><input type="checkbox" id="atrial-flutter"> <label for="atrial-flutter"><a href="">Atrial
+                            flutter</a></label></li>
+                <li><input type="checkbox" id="atrial-fibrillation"> <label for="atrial-fibrillation"><a href="">Atrial
+                            fibrillation</a></label></li>
+                <li><input type="checkbox" id="premature-ventricular-contractions"> <label
+                        for="premature-ventricular-contractions"><a href="">Premature ventricular
+                            contractions</a></label></li>
+
+            </ul>
+
         </div>
+        <div class="review-cell">
+            <p class="arthh help-text"><span class="red">Step 2:</span>Choose one of the following</p>
+            <ul>
+                <li><input type="checkbox" id="description"> <label for="description">Description</label></li>
+                <li><input type="checkbox" id="whats-going-on-inside"> <label for="whats-going-on-inside">What's going
+                        on inside the heart</label></li>
+                <li class="red"><input type="checkbox" id="ecg"> <label for="ecg">ECG</label></li>
+                <li><input type="checkbox" id="quizzes"> <label for="quizzes">Quizzes</label></li>
+            </ul>
+            <br>
+            <br>
+            <p class="help-text arthh"><span class="red">Step 3:</span>Click "Compare"</p>
+            <br>
+            <br>
+            <a href="compare_second.html" class="get-started-button center arthhh" >Compare</a>
+        </div>
+    </div>
 
-        <footer class="center white-color">
-            <a class="space" href="telemetry.html">Telemetry Simulator</a>
-            <a class="space" href="pop_quiz.html">Pop Quizzes</a>
-            <a class="space" href="fooled.html">Don't be fooled</a>
-            <a class="space" href="procedure.html">Procedures</a>
-            <a class="space" href="test.html">Test me</a>
-            <a class="space" href="save.html">Save Flashcards</a>
-            <a class="space" href="vault.html">My digital vault</a>
-            <a class="space" href="downloads.html">Downloads</a>
-        </footer>
-        <script src="scripts/script.js"></script>
-    </body>
+    <footer class="center white-color">
+        <a class="space" href="telemetry.html">Telemetry Simulator</a>
+        <a class="space" href="pop_quiz.html">Pop Quizzes</a>
+        <a class="space" href="fooled.html">Don't be fooled</a>
+        <a class="space" href="procedure.html">Procedures</a>
+        <a class="space" href="test.html">Test me</a>
+        <a class="space" href="save.html">Save Flashcards</a>
+        <a class="space" href="vault.html">My digital vault</a>
+        <a class="space" href="downloads.html">Downloads</a>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
 </html>
